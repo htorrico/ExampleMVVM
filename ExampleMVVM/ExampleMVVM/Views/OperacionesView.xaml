@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExampleMVVM.Views.OperacionesView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Text="{Binding Valor1}" HorizontalOptions="CenterAndExpand"></Entry>
+                <Entry Text="{Binding Valor2}" HorizontalOptions="CenterAndExpand"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Sumar" Command="{Binding Sumar}" HorizontalOptions="CenterAndExpand"></Button>
+                <Label Text="{Binding Resultado}" HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Sumar" Command="{Binding Restar}" HorizontalOptions="CenterAndExpand"></Button>
+                <Label Text="{Binding ResultadoResta}" HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
